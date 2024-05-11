@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* height: 300px; */
+            padding: 50px;
+            
+            background-color: aquamarine;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-auto-rows: 100px;
+            grid-template-areas:
+            "one one one"
+            "two two three"
+            "two two five"
+            "six six six" ;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            /* gap: 20px; */
+            border: black;
+        }
+        .one{
+            /* grid-column: span 2;
+            grid-row: span 2; */
+            /* grid-column: 2/4; */
+            /* grid-row: 2/3; */
+            grid-area: one ;
+
+        }
+        .two{
+            /* grid-column: span 3; */
+            grid-area: two ;
+            
+        }
+        .three{
+            /* grid-row: span 2; */
+            grid-area: three ;
+        
+        }
+        .four{
+            /* grid-column: 2/4; */
+            grid-area: four ;
+        }
+        .five{
+            /* grid-column: 2/4; */
+            grid-area: five ;
+        }
+        .six{
+            /* grid-column: 2/4; */
+            grid-area: six;
+        }
+       
+
+
+        .item{
+            border: 1px solid black;
+            background-color:gray;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item one">1</div>
+        <div class="item two">2</div>
+        <div class="item three">3</div>
+        <div class="item four">4</div>
+        <div class="item five">5</div>
+        <div class="item six">6</div>
+    </div>
+</body>
+</html>
