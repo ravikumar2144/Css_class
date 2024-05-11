@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        div p{
+            color: purple;
+        }      
+        /* decndent selector */
+        div+p{
+            color: red;
+        }
+        /* adjacent sibiling selector */
+        div>h2{
+            color: red;
+        }
+        /* child selector */
+        div~p{
+            color: brown;
+        }
+        /* genral sibiling selector */
+    </style>
+</head>
+<body>
+    <div>
+        <h2>child</h2>
+        <h2>child</h2>
+        <p>this paragraph tag</p>
+        <p>this paragraph tag 1</p>
+        <h1>heading tag 1</h1>
+    </div>
+    <p>adjustment 2</p>
+    <h1>adjustment</h1>
+    <p>adjustment 2</p>
+    <p>genral</p>
+    <p>genral</p>
+    <p>genral</p>
+    <p>genral</p>
+    <p>genral</p>
+
+</body>
+</html>
